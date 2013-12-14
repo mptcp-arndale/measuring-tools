@@ -6,7 +6,7 @@ These tools may or may not help at measuring the effects of Multipath TCP.
 All of these compile and run on Android using the C compiler from NDK without
 any special dependencies.
 
-Use `make` to compile:
+Use the GNU `make` to compile:
 
     make
 
