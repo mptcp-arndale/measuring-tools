@@ -65,6 +65,7 @@ int main(int argc, char** argv)
 
     struct sockaddr_in sai;
     memset( &sai, 0, sizeof(sai) );
+    sai.sin_family = AF_INET;
     sai.sin_port = htons(atoi(argv[1]));
     if ( bind(s, (struct sockaddr*) &sai, sizeof(sai) ) ) {
         perror("bind");
